@@ -1,0 +1,14 @@
+<!doctype html>
+<title>Your Snippets</title>
+{% if singleValue -%}
+	<h2>{{ singleValue }}</h2>
+{% else -%}
+	<h1>Your Snippets</h1>
+	{% if snippets %}
+		{% for k,v in snippets.items() -%}
+		  <h3><a href='/snippets/{{ k }}'>{{ v.text }}</a></h3>
+		{% endfor %}
+	{% else %}
+		<em>You have no snippets yet!</em>
+	{% endif %}
+{% endif %}

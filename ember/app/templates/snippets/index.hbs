@@ -1,0 +1,7 @@
+<h2>These are the snippets</h2>
+{{#each snippet in model}}
+	{{#link-to 'snippet' snippet}}
+		<div>{{snippet.id}}</div>
+	{{/link-to}}	
+{{/each}}
+{{#link-to 'snippets.create'}}<div>Create</div>{{/link-to}}
