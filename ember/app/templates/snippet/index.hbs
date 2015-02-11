@@ -2,6 +2,6 @@
 <div>{{id}}</div>
 {{text-editor text=text}}
 
-{{#link-to 'snippets'}}<div>Back</back>{{/link-to}}
-<button {{action 'saveSnippet' model}}>Save</button>
-<button {{action 'deleteSnippet' model}}>Delete</button>
+{{#link-to 'snippets'}}<div class='btn btn-default'>Back</back>{{/link-to}}
+<button class='btn btn-success' {{action 'saveSnippet' model}}>Save</button>
+<button class='btn btn-danger' {{action 'deleteSnippet' model}}>Delete</button>
