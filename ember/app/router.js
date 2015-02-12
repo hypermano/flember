@@ -8,7 +8,8 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.resource('snippets', function() {
     this.resource('snippet', {
-        path: '/:snippet_id'}, function() {  			
+        path: '/:snippet_id'}, function() {
+        	this.route("edit");		
         }
   	);
     this.route("create");

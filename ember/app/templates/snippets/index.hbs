@@ -1,6 +1,6 @@
 <h2>These are the snippets</h2>
 {{#each snippet in model}}
-	{{#link-to 'snippet' snippet}}
+	{{#link-to 'snippet.edit' snippet}}
 		<div>{{snippet.id}}</div>
 	{{/link-to}}	
 {{/each}}
