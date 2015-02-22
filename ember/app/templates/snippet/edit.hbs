@@ -2,6 +2,8 @@
 <div>{{id}}</div>
 {{text-editor text=text}}
 
+{{bs-datetimepicker date=date showTodayButton=true}}
+
 {{#link-to 'snippets'}}<div class='btn btn-default'>Back</back>{{/link-to}}
 <button class='btn btn-success' {{action 'saveSnippet' model}}>Save</button>
 <button class='btn btn-danger' {{action 'deleteSnippet' model}}>Delete</button>
